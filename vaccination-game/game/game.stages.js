@@ -1,6 +1,6 @@
 /**
  * # Game stages definition file
- * Copyright(c) 2020 KLC <->
+ * Copyright(c) 2020 [C:\Users\admin\Downloads\nodegame-v5.11.0 <\]>
  * MIT Licensed
  *
  * Stages are defined using the stager API
@@ -11,7 +11,7 @@
 
 module.exports = function(stager, settings) {
 
-     stager
+    stager
         .next('introduction')
         .next('desease')
         .next('treat')
@@ -22,20 +22,12 @@ module.exports = function(stager, settings) {
         .next('opend')
         .next('demographics')
         .next('politics')
+        .next("health")
         .next('risk')
         .next('end')
         .gameover();
-
     // Modify the stager to skip one stage.
-     //stager.skip('instructions');
-     //stager.skip('desease');
-     //stager.skip('quiz');
-     //stager.skip('guess');
-    // stager.skip('results');
-    //stager.skip('demographics');
-    // stager.skip('politics');
-    // stager.skip('risk');
-    // stager.skip('end')
+    // stager.skip('instructions');
 
     // To skip a step within a stage use:
     // stager.skip('stageName', 'stepName');
